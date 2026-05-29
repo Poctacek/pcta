@@ -13,16 +13,16 @@ body {
 h1 {
   font-size: 1.5rem;
   text-align: center;
+  color: #fff;
 }
 
 .intro {
-  border-color: #9bb2f1;
-  background-color: #8ea9f3;
+  border-color: #583055;
+  background-color: #502c4d;
   border-style: solid;
-  border-width: 0x;
   border-radius: 500px;
   margin: 0 auto;
-  margin-top: 20px;
+  margin-top: 10px;
   max-width: 400px;
   user-select: none;
   cursor: default;
@@ -36,6 +36,15 @@ h1 {
   display: flex;
   align-items: center;
   justify-content: center;
+  padding-top: 10px;
+}
+
+.visible {
+  opacity: 1;
+  transform: translateY();
+  transition:
+    opacity 0.5s ease,
+    transform 0.5s ease;
 }
 
 .nav-links {
@@ -50,8 +59,15 @@ h1 {
 .nav-links li a {
   color: #fff;
   text-decoration: none;
-  padding: 14px 40px;
+  padding: 6px 16px;
   display: block;
   text-align: center;
   align-items: center;
+  transition: ease-out 0.3s;
+}
+.nav-links li a:hover {
+  background-color: #502c4d;
+  border-radius: 1px;
+
+  transition: ease 0.3s;
 }
